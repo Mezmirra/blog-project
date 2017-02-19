@@ -11,3 +11,9 @@ html {
     max-width: 1060px;
     margin: auto;
 }
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}

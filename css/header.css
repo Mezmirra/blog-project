@@ -98,14 +98,15 @@
 .about {
     position: relative;
     margin: 120px 0 0 0;
-    padding: 25px 0 0 0;
+    padding: 25px 0;
     background-color: #d45e5e;
     color: #fff;
     overflow: visible;
 }
 
 .about__common {
-    width: 590px;
+    display: inline-block;
+    width: 60%;
     font-size: 13px;
     line-height: 22px;
 }
@@ -159,9 +160,47 @@
 }
 
 .skills {
-    
+    display: inline-block;
+    float: right;
+    width: 30%;
 }
 
+.skills__title {
+    font-family: Cambria, serif;
+    font-weight: 400;
+    font-size: 24px;
+    margin: 40px 0 25px 0;
+}
+
+.skills__scale-item {
+    font-size: 18px;
+    margin: 8px 0 0 0;
+}
+
+.skills__scale-item:after {
+    display: inline-block;
+    content: '';
+    width: 198px;
+    height: 10px;
+    margin: 0 0 0 10px;
+    background: url(../img/scales.png) no-repeat;
+}
+
+.skills__scale-item-ps:after {
+    background-position: 0 0;
+}
+
+.skills__scale-item-ai:after {
+    background-position: 0 -12px;
+}
+
+.skills__scale-item-bs:after {
+    background-position: 0 -24px;
+}
+
+.skills__scale-item-cs:after {
+    background-position: 0 -36px;
+}
 
 .footer {
     background-color: #282828;
