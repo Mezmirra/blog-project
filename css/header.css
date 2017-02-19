@@ -123,6 +123,10 @@
     margin: 0 0 35px 160px;
 }
 
+.social__person {
+    display: inline-block;
+}
+
 .social__name {
     font-family: Cambria, serif;
     font-size: 24px;
@@ -131,7 +135,7 @@
 
 .social__place {
     line-height: 14px;
-    margin: 10px 0 0 0;
+    margin: 12px 0 0 0;
 }
 
 .social__place:before {
@@ -144,6 +148,16 @@
     vertical-align: text-top;
 }
 
+.social__links {
+    font-size: 45px;
+    float: right;
+    margin: 5px 15px 0 0;
+}
+
+.social__links-icons {
+    margin: 0 15px 0 0;
+}
+
 .skills {
     
 }
@@ -152,7 +166,7 @@
 .footer {
     background-color: #282828;
     color: #fff;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 40px;
     text-align: right;
 }
