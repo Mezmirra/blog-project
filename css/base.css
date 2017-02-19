@@ -1,0 +1,13 @@
+html {
+    font-family: 'PT Sans', sans-serif;
+    color: #404040;
+}
+
+.outer-container {
+    overflow: hidden;
+}
+
+.inner-container {
+    max-width: 1060px;
+    margin: auto;
+}
