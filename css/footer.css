@@ -1,0 +1,14 @@
+.footer {
+    background-color: #282828;
+    color: #fff;
+    font-size: 13px;
+    line-height: 40px;
+    text-align: right;
+}
+
+@media screen and (max-width: 900px) {
+    
+    .footer {
+        text-align: center;
+    }
+}

@@ -1,0 +1,39 @@
+.quote {
+    text-align: center;
+}
+
+.quote_image {
+    margin: 40px 0 0 0;
+}
+
+.quote__description {
+    font-family: Cambria, serif;
+    font-size: 22px;
+    font-style: italic;
+    line-height: 36px;
+    margin: 30px auto 50px;
+    width: 480px;
+}
+
+.quote__entourage-shadow {
+    display: block;
+}
+
+.quote__entourage-line {
+    display: none;
+    height: 1px;
+    width: 100%;
+    background: #F2F2F2;
+    margin: 0 0 8px 0;
+}
+
+@media screen and (max-width: 1180px) {
+    
+    .quote__entourage-shadow {
+        display: none;
+    }
+    
+    .quote__entourage-line {
+        display: block;
+    }
+}

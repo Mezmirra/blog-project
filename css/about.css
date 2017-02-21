@@ -1,0 +1,154 @@
+.about {
+    position: relative;
+    margin: 100px 0 0 0;
+    padding: 25px 0;
+    background-color: #d45e5e;
+    color: #fff;
+    overflow: visible;
+}
+
+.about__common {
+    display: inline-block;
+    width: 70%;
+    font-size: 13px;
+    line-height: 22px;
+}
+
+.avatar {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border: 5px solid #fff;
+    top: -50px;
+    z-index: 10;
+}
+
+.social {
+    margin: 0 0 35px 160px;
+}
+
+.social__person {
+    display: inline-block;
+}
+
+.social__name {
+    font-family: Cambria, serif;
+    font-size: 24px;
+    font-style: italic;
+}
+
+.social__place {
+    line-height: 14px;
+    margin: 12px 0 0 0;
+}
+
+.social__place:before {
+    display: inline-block;
+    content: '';
+    width: 12px;
+    height: 15px;
+    background-image: url(../img/location.png);
+    margin: 0 10px 0 0;
+    vertical-align: text-top;
+}
+
+.social__links {
+    font-size: 45px;
+    float: right;
+    margin: 5px 15px 0 0;
+}
+
+.social__links a, .social__place a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.social__links a:hover, .social__place a:hover {
+    text-decoration: none;
+    color: #FFE0E0;
+    transition-duration: 0.1s;
+}
+
+.social__links-icons {
+    margin: 0 15px 0 0;
+}
+
+.skills {
+    display: inline-block;
+    float: right;
+    width: 230px;
+}
+
+.skills__title {
+    font-family: Cambria, serif;
+    font-weight: 400;
+    font-size: 24px;
+    margin: 35px 0 25px 0;
+}
+
+.skills__scale-item {
+    font-size: 18px;
+    margin: 8px 0 0 0;
+}
+
+.skills__scale-item:after {
+    display: inline-block;
+    content: '';
+    width: 198px;
+    height: 10px;
+    margin: 0 0 0 10px;
+    background: url(../img/scales.png) no-repeat;
+}
+
+.skills__scale-item-ps:after {
+    background-position: 0 0;
+}
+
+.skills__scale-item-ai:after {
+    background-position: 0 -12px;
+}
+
+.skills__scale-item-bs:after {
+    background-position: 0 -24px;
+}
+
+.skills__scale-item-cs:after {
+    background-position: 0 -36px;
+}
+
+@media screen and (max-width: 1050px) {
+    
+    .about__common {
+        width: 65%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    
+    .about__common {
+        display: block;
+        width: 100%;
+    }
+    
+    .social__links {
+        margin: 5px 0 0 0;
+    }
+    
+    .social__links-icons:last-of-type {
+        margin: 0 5px 0 0;
+    }
+    
+    .skills {
+        display: block;
+        float: none;
+        margin: 50px auto 40px;
+    }
+    
+    .skills__title {
+        text-align: center;
+    }
+    
+    .skills__scale-item {
+        text-align: right;
+    }
+}
