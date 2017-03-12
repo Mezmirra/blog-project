@@ -23,7 +23,7 @@
     display: none;
     height: 1px;
     width: 100%;
-    background: #F2F2F2;
+    background: @air-gray;
     margin: 0 0 8px 0;
 }
 
@@ -35,5 +35,12 @@
     
     .quote__entourage-line {
         display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    
+    .quote__description {
+        width: 80%; 
     }
 }

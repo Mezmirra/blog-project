@@ -1,0 +1,61 @@
+.logo {
+    display: inline-block;
+    margin: 40px 0 0 0;
+}
+
+.logo__description {
+    font-family: @add-font;
+    font-size: 14px;
+    color: @black;
+    margin: 0;
+}
+
+.menu {
+    display: inline-block;
+    float: right;
+}
+
+.menu__link {
+    display: inline-block;
+    font-family: @menu-font;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: @black;
+    padding: 40px 12px 10px;
+}
+
+.menu__link:hover {
+    color: @razz;
+}
+
+.menu__link.active {
+    background-color: @razz;
+    color: @white;
+}
+
+@media screen and (max-width: 600px) {
+    
+    .header {
+        .inner-container {
+            text-align: center;
+        }
+    }
+    
+    .logo {
+        display: block;
+        margin: 35px 0 0 0;
+    }
+    
+    .menu {
+        display: block;
+        float: none;
+        margin: 30px auto 30px;
+    }
+    
+    .menu__link {
+        padding: 10px 12px 10px;
+        font-size: 18px;
+    }
+
+}

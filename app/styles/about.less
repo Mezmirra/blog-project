@@ -1,9 +1,9 @@
-.about {
+.about { 
     position: relative;
     margin: 100px 0 0 0;
     padding: 25px 0;
-    background-color: #d45e5e;
-    color: #fff;
+    background-color: @razz;
+    color: @white;
     overflow: visible;
 }
 
@@ -18,7 +18,7 @@
     position: absolute;
     width: 120px;
     height: 120px;
-    border: 5px solid #fff;
+    border: 5px solid @white;
     top: -50px;
     z-index: 10;
 }
@@ -47,7 +47,7 @@
     content: '';
     width: 12px;
     height: 15px;
-    background-image: url(../img/location.png);
+    background-image: url(../../app/images/location.png);
     margin: 0 10px 0 0;
     vertical-align: text-top;
 }
@@ -60,17 +60,18 @@
 
 .social__links a, .social__place a {
     text-decoration: none;
-    color: #fff;
+    color: @white;
 }
 
 .social__links a:hover, .social__place a:hover {
     text-decoration: none;
-    color: #FFE0E0;
+    color: @lite-pink;
     transition-duration: 0.1s;
 }
 
 .social__links-icons {
     margin: 0 15px 0 0;
+    display: inline-block;
 }
 
 .skills {
@@ -97,7 +98,7 @@
     width: 198px;
     height: 10px;
     margin: 0 0 0 10px;
-    background: url(../img/scales.png) no-repeat;
+    background: url(../../app/images/scales.png) no-repeat;
 }
 
 .skills__scale-item-ps:after {
@@ -150,5 +151,50 @@
     
     .skills__scale-item {
         text-align: right;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    
+    .social__name {
+        font-size: 22px;
+    }
+    
+    .social__links {
+        float: none;
+        display: block;
+        position: absolute;
+        top: 110px;
+        left: 40px;
+        margin: 5px 15px 0 0;
+    }
+    
+    .social__links-icons:after {
+        display: inline-block;
+        font-size: 13px;
+        font-family: @main-font;
+        vertical-align: middle;
+        margin: 0 0 0 10px;
+    }
+    
+    .social__links-icons.fa-twitter:after {
+        content: "Twitter";
+    }
+    
+    .social__links-icons.fa-dribbble:after {
+        content: "Dribbble";
+    }   
+    
+    .about__common-description {
+        margin-top: 120px;
+    }
+    
+    .skills:before {
+        display: block;
+        content: '';
+        width: 40%;
+        height: 2px;
+        background-color: @lite-pink;
+        margin: 0 auto;
     }
 }
